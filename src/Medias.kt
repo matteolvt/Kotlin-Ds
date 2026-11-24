@@ -33,13 +33,13 @@ class Journal(titre: String, dateDeParution: String) : Medias(titre, dateDeParut
     }
 }
 
-class EnregistementAudio(titre: String, dateDeParution: String, val duree: Int, val genre: String
+class EnregistrementAudio(titre: String, dateDeParution: String, val duree: Int, val genre: String
 ) : Medias(titre, dateDeParution) , Empruntable{
 
     override var estEmprunte: Boolean = false
 
     override fun afficher(): String {
-        return "Enregistement Audio : '$titre' appartenant au genre $genre paru le $dateDeParution, durant $duree"
+        return "Enregistrement Audio : '$titre' appartenant au genre $genre paru le $dateDeParution, durant $duree"
     }
 }
 

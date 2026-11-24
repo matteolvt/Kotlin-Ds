@@ -26,7 +26,7 @@ interface Consultable {
     fun consulter() {
         if (!estEnConsultation) {
             estEnConsultation = true
-            println("Consultation sur place entammée")
+            println("Consultation sur place entamée")
         } else {
             println("Impossible : ce média est deja en cours de consultation/emprunté")
         }
